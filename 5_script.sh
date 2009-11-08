@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 
 bucardo_ctl add herd all_users public.users
 
@@ -27,6 +27,6 @@ bucardo_ctl update sync swap_users onetimecopy=2
 ## TODO: make the initial database loads the same!
 
 ## Initial setting of the sequence
-psql -U postgres mmtest2 -c 'select setval('users_id_seq', 10);'
+psql -U postgres mmtest2 -c "select setval('users_id_seq', 10);"
 
 
