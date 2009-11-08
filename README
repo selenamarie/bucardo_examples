@@ -1,0 +1,5 @@
+This is a set of examples for use with the Bucardo replication system.
+
+Examples were created on an OS X system, and generally assume usage on a UNIX system with bash.
+
+  simple_swap_sync --> Defaulting to conflict resolution 'source'
