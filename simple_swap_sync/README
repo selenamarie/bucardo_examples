@@ -1,0 +1,12 @@
+simple_swap_sync
+
+This example sets up a simple 'swap' sync. 
+
+'swap' is a multi-master synchronization method provided by Bucardo.
+
+This example implements the conflict resolution type 'source', which
+causes Bucardo to use the 'source' herd change in the event that
+source and target changes conflict. 
+
+The example creates an artificial conflict by stopping replication
+temporarily and then restarting (see 7_script.sh).
