@@ -1,0 +1,3 @@
+DROP DATABASE bucardo;
+DROP DATABASE mmtest;
+DROP DATABASE mmtest2;
