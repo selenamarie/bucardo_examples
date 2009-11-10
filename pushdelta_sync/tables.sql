@@ -9,6 +9,8 @@ CREATE TABLE users (
 	lastname TEXT NOT NULL
 );
 
+CREATE DATABASE mstest2 TEMPLATE mstest;
+
 COPY users (id, username, firstname, lastname) FROM stdin;
 1	adam	adam	one
 2	eve	eve	two
@@ -21,13 +23,3 @@ COPY users (id, username, firstname, lastname) FROM stdin;
 
 SELECT setval('users_id_seq', 7);
 
-CREATE DATABASE mstest2;
-
-\c mstest2
-
-CREATE TABLE users ( 
-	id SERIAL NOT NULL PRIMARY KEY,
-	username TEXT NOT NULL,
-	firstname TEXT NOT NULL,
-	lastname TEXT NOT NULL
-);
